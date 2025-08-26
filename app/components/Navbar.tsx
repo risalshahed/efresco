@@ -6,11 +6,13 @@ import { TbTruckDelivery } from "react-icons/tb";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import SignInButton from "./SignInButton";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
 
   const listItems = [
     {
@@ -100,16 +102,9 @@ export default function Navbar() {
           </div>
 
           {/* Login & Logout */}
-          {/* <div className='text-center ml-20 sm:ml-0 mt-5 lg:mt-0'>
-            {session ? (
-              <>
-                <Link href='/dashboard' className='mr-4 block lg:inline'>Dashboard</Link>
-                <button onClick={() => signOut()} className='bg-[#d12525] px-4 py-2 rounded block lg:inline'>Logout</button>
-              </>
-            ) : (
-              <Link href='/login' className='bg-green-500 p-2 rounded block lg:inline'>Login</Link>
-            )}
-          </div> */}
+          <div className='text-center ml-20 sm:ml-0 mt-5 lg:mt-0'>
+            <SignInButton />
+          </div>
         </div>
       </div>
 
