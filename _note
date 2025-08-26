@@ -1,5 +1,17 @@
-signUP and login endpoin http://localhost:3000/api/auth/signup /==> http://localhost:3000/api/auth/login 
+Starter Code Repository
+https://github.com/risalshahed/efresco
 
+Javascript Interview Question
+Memory creation context, code execution context
+hoisting
+Temporal dead zone
+simple vs arrow function
+promise
+scope, scope chain
+var vs let vs const
+Lexical environment
+closure
+event loop
+asynchronous
 
-
-
+signUP and login endpoin http://localhost:3000/api/auth/signup /==> http://localhost:3000/api/auth/login
