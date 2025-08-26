@@ -109,8 +109,8 @@ export default function Hero() {
   }, []);
 
   return (
-    // <section className="bg-[url('/hero-bg.jpg')] bg-cover bg-top relative w-full h-screen flex items-center justify-center">
-    <section className='bg-[#d12525] w-full min-h-screen xl:min-h-[70vh] flex items-center justify-center py-20'>
+    // <section className='bg-[#d12525] w-full min-h-screen xl:min-h-[70vh] flex items-center justify-center py-20'>
+    <section className='hero-bg bg-cover bg-center w-full min-h-screen xl:min-h-[70vh] flex items-center justify-center pt-53 pb-20 -mt-33'>
       {/* <div className='absolute inset-0'></div> */}
 
       <div className='relative w-full max-w-6xl mx-auto px-6 lg:px-12 py-6 md:py-12 flex flex-col lg:flex-row items-center lg:items-stretch lg:justify-between lg:gap-x-5'>

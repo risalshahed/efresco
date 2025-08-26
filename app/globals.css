@@ -20,6 +20,12 @@ body {
   font-family: 'Barlow Condensed';
 }
 
+.hero-bg {
+  background-image: url('/hero-bg.jpg');
+  position: relative;
+  z-index: -1;
+}
+
 /* Animation for "marquee" class */
 @keyframes marquee {
   0% { transform: translateX(100%); }

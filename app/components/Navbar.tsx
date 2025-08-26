@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useSession, signOut } from "next-auth/react";
 import { BiCartAdd, BiSearch } from "react-icons/bi";
 import { TbTruckDelivery } from "react-icons/tb";
 import Image from "next/image";
@@ -9,7 +8,6 @@ import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export default function Navbar() {
-  const { data: session } = useSession();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -43,8 +41,7 @@ export default function Navbar() {
   ]
 
   return (
-    // <nav className="border-b border-b-slate-500 px-5 py-7 text-white flex justify-between items-center">
-    <nav className='bg-[#d12525] border-b border-b-slate-500 px-5 py-7 text-white flex justify-between items-center'>
+    <nav className='border-b border-b-slate-300 px-5 py-7 text-white flex justify-between items-center'>
       <Link href='/' className='text-lg font-bold'>
         <Image
           width={150}
@@ -103,7 +100,7 @@ export default function Navbar() {
           </div>
 
           {/* Login & Logout */}
-          <div className='text-center ml-20 sm:ml-0 mt-5 lg:mt-0'>
+          {/* <div className='text-center ml-20 sm:ml-0 mt-5 lg:mt-0'>
             {session ? (
               <>
                 <Link href='/dashboard' className='mr-4 block lg:inline'>Dashboard</Link>
@@ -112,7 +109,7 @@ export default function Navbar() {
             ) : (
               <Link href='/login' className='bg-green-500 p-2 rounded block lg:inline'>Login</Link>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
 
